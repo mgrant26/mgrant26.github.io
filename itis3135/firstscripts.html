@@ -51,19 +51,19 @@
 <br>
 	<p>Hello and welcome to the Musty Giraffe! What is your name and how are you feeling today?</p>
 	<form action="#">
-  		<label for="fname">First name:</label>
+  		<label for="fname">Your Name:</label>
   		<input type="text" id="inputName" name="Your Name"><br><br>
-  		<label for="lname">Last name:</label>
+  		<label for="lname">Your mood:</label>
   		<input type="text" id="inputMood" name="Your mood?"><br><br>
 	</form>
 	<button type="button" onclick="displayMessage()">Click here!</button>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
-			var nameVar = "test";
-			var moodVar = "test";
-			document.getElementById("inputName").value = nameVar;
-			document.getElementById("inputMood").value = moodVar;
+			var nameVar = document.getElementById("inputName").value = nameVar;
+			var moodVar = document.getElementById("inputMood").value = moodVar;
+			
+			
 			
 			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ " ! We are so happy you are feeling " +moodVar+ "!";
 		}

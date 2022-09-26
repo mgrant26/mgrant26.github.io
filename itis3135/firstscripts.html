@@ -58,12 +58,14 @@
 		<button type="button" onclick="displayMessage()">Click here!</button>
 	</form>
 
-	<p>i know it updated 3</p>
+	<p>i know it updated 4</p>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
-			var nameVar = document.getElementById("inputName").value = nameVar;
-			var moodVar = document.getElementById("inputMood").value = moodVar;
+			alert("How are you feeling today?");
+			var moodVar = prompt("Please enter how you are feeling.");
+			alert("What is your name?");
+			var nameVar = prompt("Please enter your name.");
 			
 			
 			

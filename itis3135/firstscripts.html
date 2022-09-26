@@ -51,14 +51,10 @@
 <br>
 	<p>Hello and welcome to the Musty Giraffe! What is your name and how are you feeling today?</p>
 	<form action="#">
-  		<label for="fname">Your Name:</label>
-  		<input type="text" id="inputName" name="Your Name"><br><br>
-  		<label for="lname">Your mood:</label>
-  		<input type="text" id="inputMood" name="Your mood?"><br><br>
-		<button type="button" onclick="displayMessage()">Click here!</button>
+		<button type="button" onclick="displayMessage()">Click here to continue!</button>
 	</form>
 
-	<p>i know it updated 4</p>
+	<p>i know it updated 5</p>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
@@ -70,7 +66,11 @@
 			
 			
 			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ "! We are so happy you are feeling " +moodVar+ "!";
+			
+			<button type="button" onclick="displayMessage()">Click here to continue!</button>
+
 		}
+		
 	</script>
 	<br>
 </body>

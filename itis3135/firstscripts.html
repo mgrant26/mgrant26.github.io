@@ -54,7 +54,7 @@
 		<button type="button" onclick="displayMessage()">Click here to continue!</button>
 	</form>
 
-	<p>i know it updated 7</p>
+	<p>i know it updated 8</p>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
@@ -66,10 +66,14 @@
 			
 			
 			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ "! We are so happy you are feeling " +moodVar+ "!";
-			
+			document.getElementById("newMenuHeader").innerHTML = nameVar+ ", you may now choose a new option in order to have some fun!";
+			document.getElementById("button1").innerHTML = "da goat";
 		}
 	</script>
 	<br>
+	<p> id="newMenuHeader"></p> <br>
+	<p> id="newButtonMenu"></p> <br>
+	<button type="button" onclick="alert("ur insane")" id="button1"></button>
 </body>
 	
 

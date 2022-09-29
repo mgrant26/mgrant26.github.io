@@ -62,12 +62,18 @@
 			var moodVar = prompt("Please enter how you are feeling.");
 			alert("What is your name?");
 			var nameVar = prompt("Please enter your name.");
-	</script>
-			
-			
+
 			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ "! We are so happy you are feeling " +moodVar+ "!";
 			document.getElementById("newMenuHeader").innerHTML = nameVar+ ", you may now choose a new option in order to have some fun!";
+		
+			let element = document.getElementById("buttonSection");
+			let hidden = element.getAttribute("hidden");
+			
+			element.removeAttribute("hidden");
+			
+		
 		}
+	</script>
 	
 	<br>
 	<p id="newMenuHeader"></p> <br>
@@ -75,7 +81,7 @@
 	<br>
 	<p id="buttonOutput"></p>
 	
-	<section id="buttonSection">
+	<section id="buttonSection" hidden>
 	<button type="button" id="button1" onclick="multiplication()">Multiply</button>
 	<button type="button" id="button2" onclick="tellJoke()">Tell a Joke</button>
 	<button type="button" id="button3" onclick="randomizeBackground()">Randomize Background</button>
@@ -86,13 +92,13 @@
 		
 	<script>
 		function multiplication(){
-			alert("this is working");
+			document.getElementById("buttonOutput").innerHTML = "this is working 1";
 		}
 	</script>
 	
 	<script>
 		function tellJoke(){
-			alert("this is working");
+			document.getElementById("buttonOutput").innerHTML = "this is working 2";
 			//let x = Math.floor(Math.random() * 4) + 1);
 			//document.write("<h1>The Joke App</h1>");
 			//document.write(x + "haha");
@@ -101,19 +107,19 @@
 	
 	<script>
 		function randomizeBackground(){
-			alert("this is working");
+			document.getElementById("buttonOutput").innerHTML = "this is working 3";
 		}
 	</script>
 	
 	<script>
 		function rickroll(){
-			alert("this is working");
+			document.getElementById("buttonOutput").innerHTML = "this is working 4";
 		}
 	</script>
 	
 	<script>
 		function complimentYou(){
-			alert("this is working");
+			document.getElementById("buttonOutput").innerHTML = "this is working 5";
 		}
 	</script>
 	

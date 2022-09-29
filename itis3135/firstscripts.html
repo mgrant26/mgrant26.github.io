@@ -78,7 +78,6 @@
 	<br>
 	<p id="newMenuHeader"></p> <br>
 	<p id="newButtonMenu"></p> <br>
-	<br>
 	<p id="buttonOutput"></p>
 	
 	<section id="buttonSection" hidden>
@@ -88,11 +87,14 @@
 	<button type="button" id="button4" onclick="rickroll()">a link :)</button>
 	<button type="button" id="button5" onclick="complimentYou()">A free compliment</button>
 	</section>
-	
+	<br>
 		
 	<script>
 		function multiplication(){
-			document.getElementById("buttonOutput").innerHTML = "this is working 1";
+			let input1 = prompt("Your first number?");
+			let input2 = prompt("Your second number?");
+			let output = input1*input2;
+			document.getElementById("buttonOutput").innerHTML = input1+ "*"+input2+" equals "+output;
 		}
 	</script>
 	

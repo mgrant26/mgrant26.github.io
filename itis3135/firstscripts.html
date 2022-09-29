@@ -54,7 +54,7 @@
 		<button type="button" onclick="displayMessage()">Click here to continue!</button>
 	</form>
 
-	<p>i know it updated 13</p>
+	<p>i know it updated 14</p>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
@@ -84,7 +84,7 @@
 	<button type="button" id="button1" onclick="multiplication()">Multiply</button>
 	<button type="button" id="button2" onclick="tellJoke()">Tell a Joke</button>
 	<button type="button" id="button3" onclick="randomizeBackground()">Randomize Background</button>
-	<button type="button" id="button4" onclick="rickroll()">a link :)</button>
+	<button type="button" id="button4" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">a link :)</button>
 	<button type="button" id="button5" onclick="complimentYou()">A free compliment</button>
 	</section>
 	<br>
@@ -100,10 +100,16 @@
 	
 	<script>
 		function tellJoke(){
-			document.getElementById("buttonOutput").innerHTML = "this is working 2";
-			//let x = Math.floor(Math.random() * 4) + 1);
-			//document.write("<h1>The Joke App</h1>");
-			//document.write(x + "haha");
+			let x = Math.floor(Math.random() * 4) + 1);
+			if(x==1){
+			document.getElementById("buttonOutput").innerHTML = "What did the fish say when he swam into a wall? Dam.";
+			} else if (x==2){
+			document.getElementById("buttonOutput").innerHTML = "If you’re American when you go in the bathroom… and American when you come out, what are you in the bathroom? European.";	
+			} else if (x==3){
+			document.getElementById("buttonOutput").innerHTML = "Did you hear the story about the claustrophobic astronaut? He just needed some space.";	
+			} else {
+			document.getElementById("buttonOutput").innerHTML = "What do you call an alligator in a vest? An in-vest-igator.";	
+			}
 		}
 	</script>
 	
@@ -113,15 +119,10 @@
 		}
 	</script>
 	
-	<script>
-		function rickroll(){
-			document.getElementById("buttonOutput").innerHTML = "this is working 4";
-		}
-	</script>
 	
 	<script>
 		function complimentYou(){
-			document.getElementById("buttonOutput").innerHTML = "this is working 5";
+			document.getElementById("buttonOutput").innerHTML = "You're looking amazing today! I hope you have a wonderful rest of your day.";
 		}
 	</script>
 	

@@ -54,7 +54,7 @@
 		<button type="button" onclick="displayMessage()">Click here to continue!</button>
 	</form>
 
-	<p>i know it updated 12</p>
+	<p>i know it updated 13</p>
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
@@ -62,57 +62,62 @@
 			var moodVar = prompt("Please enter how you are feeling.");
 			alert("What is your name?");
 			var nameVar = prompt("Please enter your name.");
-			
+	</script>
 			
 			
 			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ "! We are so happy you are feeling " +moodVar+ "!";
 			document.getElementById("newMenuHeader").innerHTML = nameVar+ ", you may now choose a new option in order to have some fun!";
 		}
-	</script>
-	
-	<script>
-		function multiplication(){
-			
-		}
-	</script>
-	
-	<script>
-		function tellJoke(){
-			let x = Math.floor(Math.random() * 4) + 1);
-			document.write("<h1>The Joke App</h1>");
-			document.write(x + "haha");
-		}
-	</script>
-	
-	<script>
-		function randomizeBackground(){
-			
-		}
-	</script>
-	
-	<script>
-		function rickroll(){
-			
-		}
-	</script>
-	
-	<script>
-		function complimentYou(){
-			
-		}
-	</script>
 	
 	<br>
 	<p id="newMenuHeader"></p> <br>
 	<p id="newButtonMenu"></p> <br>
+	<br>
+	<p id="buttonOutput"></p>
+	
+	<section id="buttonSection">
 	<button type="button" id="button1" onclick="multiplication()">Multiply</button>
 	<button type="button" id="button2" onclick="tellJoke()">Tell a Joke</button>
 	<button type="button" id="button3" onclick="randomizeBackground()">Randomize Background</button>
 	<button type="button" id="button4" onclick="rickroll()">a link :)</button>
 	<button type="button" id="button5" onclick="complimentYou()">A free compliment</button>
-	<br>
-	<p id="buttonOutput"></p>
+	</section>
 </body>
+
+
+	
+	<script>
+		function multiplication(){
+			alert("this is working");
+		}
+	</script>
+	
+	<script>
+		function tellJoke(){
+			alert("this is working");
+			//let x = Math.floor(Math.random() * 4) + 1);
+			//document.write("<h1>The Joke App</h1>");
+			//document.write(x + "haha");
+		}
+	</script>
+	
+	<script>
+		function randomizeBackground(){
+			alert("this is working");
+		}
+	</script>
+	
+	<script>
+		function rickroll(){
+			alert("this is working");
+		}
+	</script>
+	
+	<script>
+		function complimentYou(){
+			alert("this is working");
+		}
+	</script>
 	
 
 <footer>

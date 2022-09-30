@@ -83,7 +83,7 @@
 	<section id="buttonSection" hidden>
 	<button type="button" id="button1" onclick="multiplication()">Multiply</button>
 	<button type="button" id="button2" onclick="tellJoke()">Tell a Joke</button>
-	<button type="button" id="button3" onclick="randomizeBackground()">Randomize Background</button>
+	<button type="button" id="button3" onclick="changeBackground()">Change Background</button>
 	<button type="button" id="button4" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">a link :)</button>
 	<button type="button" id="button5" onclick="complimentYou()">A free compliment</button>
 	</section>
@@ -114,8 +114,9 @@
 	</script>
 	
 	<script>
-		function randomizeBackground(){
-			  document.body.style.backgroundColor= "green";
+		function changeBackground(){
+			let input = prompt("What would you like to change the color to?");
+			  document.body.style.backgroundColor= input;
 		}
 	</script>
 	

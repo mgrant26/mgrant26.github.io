@@ -60,14 +60,16 @@
         var loopsPlease = true;
         
 			do {
-                prompt("Enter your number of sides");
-                	if (isNaN(loopsPlease)){
-                		loopsPlease = false;
+                sidesInput = prompt("Enter your number of sides");
+                	if (typeof loopsPlease == 'number'){
+                		loopsPlease = true;
+                        alert("a number");
 					} else {
                 		loopsPlease = false;
+                        alert("a letter");
                 	}
 				}
-			while (loopsPlease == true;);
+			while (loopsPlease == true);
             
 		}
 	</script>

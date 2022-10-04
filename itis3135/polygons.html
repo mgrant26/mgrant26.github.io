@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,30 +50,55 @@
 		document.getElementById('date').innerHTML = Date();
 	</script>
 <br>
-	<p>What number of sides would you like to know about?</p>
+	<p id="question">What number of sides would you like to know about?</p>
     
 		<button type="button" onclick="displayMessage()">Click here to continue!</button>
         
 	<p id="functionOutput"></p>
 	<script>
 		function displayMessage(){
-        var sidesInput = 0;
+        var input = 0;
         var loopsPlease = true;
+        var numSides = 0;
         
 			do {
-                sidesInput = prompt("Enter your number of sides");
-                	if (typeof loopsPlease == 'number'){
+                input = prompt("Enter your number of sides");
+                numSides = Math.abs(parseInt(input));
+                
+                	if (isNaN(numSides) || numSides > 10){
                 		loopsPlease = true;
-                        alert("a number");
+                        alert("That is not a number or it is over 10, please try again.");
 					} else {
-                		loopsPlease = false;
-                        alert("a letter");
-                	}
-				}
-			while (loopsPlease == true);
+                    	loopsPlease = false;
+                        //alert("a number");
+                        //alert(numSides);
+                    }
+				} while (loopsPlease == true);
             
+            if (numSides == 1){
+            	document.getElementById("output").innerHTML = "henagon/monogon";
+            } else if (numSides == 2){
+            	document.getElementById("output").innerHTML = "digon/bigon";
+            } else if (numSides == 3){
+            	document.getElementById("output").innerHTML = "trigon/triangle";
+            } else if (numSides == 4){
+            	document.getElementById("output").innerHTML = "tetragon/quadrilateral";
+            } else if (numSides == 5){
+            	document.getElementById("output").innerHTML = "pentagon";
+            } else if (numSides == 6){
+            	document.getElementById("output").innerHTML = "hexagon";
+            } else if (numSides == 7){
+            	document.getElementById("output").innerHTML = "heptagon/septagon";
+            } else if (numSides == 8){
+            	document.getElementById("output").innerHTML = "octagon";
+            } else if (numSides == 9){
+            	document.getElementById("output").innerHTML = "enneagon/nonagon";
+            } else if (numSides == 10){
+            	document.getElementById("output").innerHTML = "decagon";
+            }
 		}
 	</script>
+    <p id="output"></p><br>
 	
 </body>
 

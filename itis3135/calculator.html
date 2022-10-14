@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> The Musty Giraffe | Michael Grant | ITIS 3135 </title>
+  <style>
+
+  	body
+  	{ 
+	  color: rgb(98, 42, 189); 
+		background-color: rgb(141, 235, 145);
+		font-family: Trebuchet MS;
+		margin-left: 300px;
+		margin-right: 300px;
+		text-align: center;
+   	}
+	
+	header, footer
+	{
+		text-align: center;
+	}
+    
+	a
+	{
+		color: teal;
+	}
+  </style>
+  
+</head>
+  
+<header>
+	<b>The Musty Giraffe</b>
+	<br>
+	<nav>
+		    <a href="http://webpages.uncc.edu/mgrant26/" target="_blank">Charlotte.edu</a> &#9830;
+		    <a href="https://github.com/mgrant26" target="_blank">Github</a> &#9830;
+		    <a href="https://mgrant26.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9830;
+		    <a href="https://www.codecademy.com/profiles/mgrant26" target="_blank">Codecademy</a> &#9830;
+		    <a href="https://www.freecodecamp.org/mgrant26/" target="_blank">freeCodeCamp</a> &#9830;
+		    <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/" target="_blank">LinkedIn</a> &#9830;
+		    <a href="https://uncc.instructure.com/courses/178981" target="_blank">Canvas Page</a> &#9830;
+		    <a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm" target="_blank">Crappy Webpage</a> &#9830;
+	</nav>
+</header> 
+  
+<body>
+<br>
+	<h3 id="date">Date.</h3>
+	<script> 
+		document.getElementById('date').innerHTML = Date();
+	</script>
+<br>
+	<p>Hello and welcome to the Musty Giraffe! What is your name and how are you feeling today?</p>
+	<form action="#">
+		<button type="button" onclick="displayMessage()">Click here to continue!</button>
+	</form>
+	<p id="functionOutput"></p>
+	<script>
+		function displayMessage(){
+			alert("How are you feeling today?");
+			var moodVar = prompt("Please enter how you are feeling.");
+			alert("What is your name?");
+			var nameVar = prompt("Please enter your name.");
+
+			document.getElementById("functionOutput").innerHTML = "Hello " +nameVar+ "! We are so happy you are feeling " +moodVar+ "!";
+			document.getElementById("newMenuHeader").innerHTML = nameVar+ ", you may now choose a new option in order to have some fun!";
+		
+			let element = document.getElementById("buttonSection");
+			let hidden = element.getAttribute("hidden");
+			
+			element.removeAttribute("hidden");
+			
+		
+		}
+	</script>
+	
+	<br>
+	<p id="newMenuHeader"></p> 
+	<p id="newButtonMenu"></p> 
+	<p id="buttonOutput"></p>
+	
+	<section id="buttonSection" hidden>
+	<button type="button" id="button1" onclick="multiplication()">Multiply</button>
+	<button type="button" id="button2" onclick="tellJoke()">Tell a Joke</button>
+	<button type="button" id="button3" onclick="changeBackground()">Change Background</button>
+	<button type="button" id="button4" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Take me somewhere</button>
+	<button type="button" id="button5" onclick="complimentYou()">A free compliment</button>
+	</section>
+	<br>
+		
+	<script>
+		function multiplication(){
+			let input1 = prompt("Your first number?");
+			let input2 = prompt("Your second number?");
+			let output = input1*input2;
+			document.getElementById("buttonOutput").innerHTML = input1+ "*"+input2+" equals "+output;
+		}
+	</script>
+	
+	<script>
+		function tellJoke(){
+			let x = Math.floor(Math.random() * 4) + 1);
+			if(x==1){
+			document.getElementById("buttonOutput").innerHTML = "What did the fish say when he swam into a wall? Dam.";
+			} else if (x==2){
+			document.getElementById("buttonOutput").innerHTML = "If you’re American when you go in the bathroom… and American when you come out, what are you in the bathroom? European.";	
+			} else if (x==3){
+			document.getElementById("buttonOutput").innerHTML = "Did you hear the story about the claustrophobic astronaut? He just needed some space.";	
+			} else {
+			document.getElementById("buttonOutput").innerHTML = "What do you call an alligator in a vest? An in-vest-igator.";	
+			}
+		}
+	</script>
+	
+	<script>
+		function changeBackground(){
+			let input = prompt("What would you like to change the color to?");
+			  document.body.style.backgroundColor= input;
+		}
+	</script>
+	
+	
+	<script>
+		function complimentYou(){
+			document.getElementById("buttonOutput").innerHTML = "You're looking amazing today! I hope you have a wonderful rest of your day.";
+		}
+	</script>
+	
+</body>
+
+
+
+	
+
+<footer>
+	<nav>
+		    <a href="http://webpages.uncc.edu/mgrant26/" target="_blank">Charlotte.edu</a> &#9830;	
+		    <a href="https://github.com/mgrant26" target="_blank">Github</a> &#9830;
+		    <a href="https://mgrant26.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9830;
+		    <a href="https://www.codecademy.com/profiles/mgrant26" target="_blank">Codecademy</a> &#9830;
+		    <a href="https://www.freecodecamp.org/mgrant26/" target="_blank">freeCodeCamp</a> &#9830;
+		    <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/" target="_blank">LinkedIn</a> &#9830;
+		    <a href="https://uncc.instructure.com/courses/178981" target="_blank">Canvas Page</a> &#9830;
+		    <a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm" target="_blank">Crappy Webpage</a> &#9830;
+	</nav>
+	<br>
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/images/button_validation_html5.png?raw=true" width="88" height="31" alt="Link to HTML validator">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/images/button_validation_css.png?raw=true" width="88" height="31" alt="Link to CSS validator">
+			</a>
+		</p>
+</footer>

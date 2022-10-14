@@ -4,16 +4,17 @@ function add(){
         var input1 = 0;
         var input2 = 0;
         var loopsPlease = true;
-        var numSides = 0;
+        var num1 = 0;
+	var num2 = 0;
        
        
 			do {
-                input1 = prompt("Enter your number of sides");
+                input1 = prompt("Please enter your first number.");
                 num1 = Math.abs(parseInt(input1));
                 
                 	if (isNaN(num1)){
                 		loopsPlease = true;
-                        alert("That is not a number or it is over 10, please try again.");
+                        alert("That is not a number, please try again.");
 					} else {
                     	loopsPlease = false;
                         //alert("a number");
@@ -22,12 +23,12 @@ function add(){
 				} while (loopsPlease == true);
         
         do {
-                input2 = prompt("Enter your number of sides");
-                num2 = Math.abs(parseInt(input1));
+                input2 = prompt("Please enter your second number");
+                num2 = Math.abs(parseInt(input2));
                 
                 	if (isNaN(num2)){
                 		loopsPlease = true;
-                        alert("That is not a number or it is over 10, please try again.");
+                        alert("That is not a number, please try again.");
 					} else {
                     	loopsPlease = false;
                         //alert("a number");

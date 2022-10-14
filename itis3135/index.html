@@ -8,7 +8,7 @@
   	{ 
 	  color: rgb(98, 42, 189); 
 		background-color: rgb(141, 235, 145);
-		font-family: Trebuchet MS;
+		font-family: Arial, Helvetica, sans-serif;
 		margin-left: 300px;
 		margin-right: 300px;
 		text-align: center;
@@ -19,27 +19,86 @@
 		text-align: center;
 	}
     
-	a
-	{
-		color: teal;
-	}
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	  
   </style>
   
 </head>
   
 <header>
 	<b>The Musty Giraffe</b>
-	<br>
-	<nav>
-		    <a href="http://webpages.uncc.edu/mgrant26/" target="_blank">Charlotte.edu</a> &#9830;
-		    <a href="https://github.com/mgrant26" target="_blank">Github</a> &#9830;
-		    <a href="https://mgrant26.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9830;
-		    <a href="https://www.codecademy.com/profiles/mgrant26" target="_blank">Codecademy</a> &#9830;
-		    <a href="https://www.freecodecamp.org/mgrant26/" target="_blank">freeCodeCamp</a> &#9830;
-		    <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/" target="_blank">LinkedIn</a> &#9830;
-		    <a href="https://uncc.instructure.com/courses/178981" target="_blank">Canvas Page</a> &#9830;
-		    <a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm" target="_blank">Crappy Webpage</a> &#9830;
-	</nav>
+		<div class="navbar">
+  			<a href="#home">Home</a>
+  			<a href="#news">News</a>
+  		<div class="dropdown">
+    			<button class="dropbtn">Dropdown 
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dropdown-content">
+      			<a href="#">Link 1</a>
+      			<a href="#">Link 2</a>
+      			<a href="#">Link 3</a>
+    		</div>
+  		</div> 
+		</div>
 </header> 
   
 <body>
@@ -58,14 +117,7 @@
 
 <footer>
 	<nav>
-		    <a href="http://webpages.uncc.edu/mgrant26/" target="_blank">Charlotte.edu</a> &#9830;	
-		    <a href="https://github.com/mgrant26" target="_blank">Github</a> &#9830;
-		    <a href="https://mgrant26.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9830;
-		    <a href="https://www.codecademy.com/profiles/mgrant26" target="_blank">Codecademy</a> &#9830;
-		    <a href="https://www.freecodecamp.org/mgrant26/" target="_blank">freeCodeCamp</a> &#9830;
-		    <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/" target="_blank">LinkedIn</a> &#9830;
-		    <a href="https://uncc.instructure.com/courses/178981" target="_blank">Canvas Page</a> &#9830;
-		    <a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm" target="_blank">Crappy Webpage</a> &#9830;
+		   
 	</nav>
 	<br>
 		<p>

@@ -12,10 +12,13 @@
 		text-align: center;
    	}
 	
-	header, footer
+	header, footer, ul, li
 	{
 	text-align: center;
-        
+	}
+	  
+	table, th, td {
+  	border:1px solid black;
 	}
 	#who{display: none;}
 	#what{display: none;}
@@ -23,7 +26,11 @@
 	#how{display: none;}
 	#where{display: none;}
 	#why{display: none;}
-
+	
+	.center {
+  	margin-left: auto;
+  	margin-right: auto;
+	}  
 	  
   </style>
   
@@ -62,7 +69,7 @@
 		<p>So I've been playing games since I was probably about 6. That was when I got my Gameboy Advanced and my very first copy of Pokemon LeafGreen. I don't think I ever finished that game funnily enough. However, over the years games have come out with ways to track how long you've been playing. What I decided to do was provide a table full of all the hours I was able to check from the section above.</p>
 		<br>
 		<h3>Hours Logged Table</h3>
-		<table>
+		<table class="center">
 		   <tr>
 			   <th>Game Name</th>
 			   <th>Time Played(Hours)</th>

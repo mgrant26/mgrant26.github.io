@@ -1,147 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> The Musty Giraffe | Michael Grant | ITIS 3135 </title>
+  <title> Midterm | Michael Grant | ITIS 3135</title>
   <style>
 
   	body
   	{ 
-	  color: rgb(98, 42, 189); 
-      	height 100%;
-		width: 100%;
-		background-color: rgb(141, 235, 145);
+	  	color: rgb(149, 29, 219); 
+		background-color: rgb(35, 176, 186);
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: center;
-		border:32px solid;
-		border-color: #333;
    	}
 	
 	header, footer
 	{
-		text-align: center;
-        background-color: #333;
+	text-align: center;
+        
 	}
-    
-    
-.navbar {
-overflow: hidden;
-background-color: #333;
-}
+	#who{display: none;}
+	#what{display: none;}
+   	#when{display: none;}
+	#how{display: none;}
+	#where{display: none;}
+	#why{display: none;}
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: purple;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 	  
   </style>
   
 </head>
-  
-<header>
-		<img src="https://mgrant26.github.io/itis3135/images/banner.png" alt="Girl in a jacket" width="500" height="300"> 
-		<div class="navbar">
-  	    <a href="http://webpages.uncc.edu/mgrant26/">Charlotte.edu</a>
-  	    <a href="https://github.com/mgrant26">Github</a>
-            <a href="https://www.codecademy.com/profiles/mgrant26">Codeacademy</a>
-            <a href="https://www.freecodecamp.org/mgrant26/">freeCodeCamp</a>
-            <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/">LinkedIn</a>
-            <a href="https://uncc.instructure.com/courses/178981">Canvas Page</a>
-  		<div class="dropdown">
-    			<button class="dropbtn">Assignments
-      				<i class="fa fa-caret-down"></i>
-    			</button>
-    		<div class="dropdown-content">
-      			<a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm">Crappy Webpage</a>
-      			<a href="https://mgrant26.github.io/itis3135/forms.html">Forms</a>
-      			<a href="https://mgrant26.github.io/itis3135/calculatortry.html">Calculator Try</a>
-			<a href="https://mgrant26.github.io/itis3135/firstscripts.html">First Scripts</a>
-			<a href="https://mgrant26.github.io/itis3135/polygons.html">Polygons</a>
-			<a href="https://mgrant26.github.io/itis3135/tables.html">Tables</a>
-			<a href="https://mgrant26.github.io/itis3135/calculator.html">Calculator</a>
-			
-    		</div>
-  		</div> 
-		</div>
-</header> 
-  
 <body>
-  <br>
-  <p> I'd like to welcome you to my first ever website that I've created for ITIS 3135. I'd like to welcome you to the Musty Giraffe.</p>
-  <br>
-	<figure>
-  		<img src="https://cdn.discordapp.com/attachments/839568752282042428/925080407639220295/Picsart_21-12-27_12-36-29-766.jpg" alt="test image" width="460" height="345"> 
-		<figcaption><small>My picture made for me by a friend.</small></figcaption>
-	</figure>
-	<br>
-  <p> Don't worry there'll be more to this page. Coming soon... </p>
-  <br>
-	
-</body>
+	<h1>Michael Grant's Hobby Page</h1>
+	<button onclick="showWho()">Show Who</button>
+	<button onclick="showWhat()">Show What</button>
+	<button onclick="showWhen()">Show When</button>
+	<button onclick="showHow">Show How</button>
+	<button onclick="showWhere()">Show Where</button>
+	<button onclick="showWhy()">Show Why</button>
 
+	<section id="who">
+		<h2>About Me</h2>
+	</section>
+	
+	<section id="what">
+		<h2>What I Do</h2>
+		<p>My personal passion is video games. I have loved video games since I was a child. I've played everything from card games to fps (first person shooters) to strategy games. It's always just been something that I've enjoyed doing growing up and I hope to always be able to have it in my life. These are some of the games that I've played over time.</p>
+		<ul>
+			<li>Overwatch 1&2</li>
+			<li>Counter-Strike Global Offensive</li>
+			<li>Hearthstone</li>
+			<li>Yu-Gi-Oh</li>
+			<li>Pokemon Games (Gens 2-8)</li>
+			<li>Valorant</li>
+			<li>Apex Legends</li>
+			<li>Titanfall 2</li>
+		</ul>
+		<p>My personal favorite among these, while not the best game, is Overwatch 1 & 2.</p>
+	</section>	
+	
+	<section id="when">
+		<h2>How Long?</h2>
+		<p>So I've been playing games since I was probably about 6. That was when I got my Gameboy Advanced and my very first copy of Pokemon LeafGreen. I don't think I ever finished that game funnily enough. However, over the years games have come out with ways to track how long you've been playing. What I decided to do was provide a table full of all the hours I was able to check from the section above.</p>
+		<br>
+		<h3>Hours Logged Table</h3>
+		<table>
+		   <tr>
+			   <th>Game Name</th>
+			   <th>Time Played(Hours)</th>
+		   </tr>
+		<tr>
+			<td>Overwatch 1 & 2</td>
+			<td>674</td>
+		</tr>
+		<tr>
+			<td>Counter-Strike Global Offensive</td>
+			<td>842.7</td>
+		</tr>
+		<tr>
+			<td>Hearthstone</td>
+			<td>1917 wins (not hours)</td>
+		</tr>
+		<tr>
+			<td>Yu-Gi-Oh</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>Pokemon Games (Gens 2-8)</td>
+			<td>1500+</td>
+		</tr>
+		<tr>
+			<td>Valorant</td>
+			<td>360</td>
+		</tr>
+		<tr>
+			<td>Apex Legends</td>
+			<td>246</td>
+		</tr>
+		<tr>
+			<td>Titanfall 2</td>
+			<td>246</td>
+		</tr>
+		</table>
+			
+	</section>
+	
+	<section id="where">
+		<h2>My Setup</h2>
+	</section>
+	
+	<section id="how">
+		<h2>idk what to do for how lol</h2>
+	</section>
+	
+	<section id="why">
+		<h2>My Passion</h2>
+	</section>
+
+	
+<script>
+	function showWho(){
+		var x = document.getElementById("who");
+		x.style.display = "block";
+	}
+</script>
+	
+<script>
+	function showWhat(){
+		var x = document.getElementById("what");
+		x.style.display = "block";
+	}
+</script>
+
+<script>
+	function showWhen(){
+		var x = document.getElementById("when");
+		x.style.display = "block";
+	}
+</script>
+	
+<script>
+	function showWhere(){
+		var x = document.getElementById("where");
+		x.style.display = "block";
+	}
+</script>
+	
+<script>
+	function showHow(){
+		var x = document.getElementById("how");
+		x.style.display = "block";
+	}
+</script>
+	
+<script>
+	function showWhy(){
+		var x = document.getElementById("why");
+		x.style.display = "block";
+	}
+</script>
 <footer>
-	<nav>
-		   
-	</nav>
+	
 	<br>
 		<p>
-			<a href="https://validator.w3.org/check?uri=referer">
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmgrant26.github.io%2Fitis3135%2FdesignFirm%2F">
 				<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/images/button_validation_html5.png?raw=true" width="88" height="31" alt="Link to HTML validator">
 			</a>
 
-			<a href="https://jigsaw.w3.org/css-validator/check/referer">
-				<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/images/button_validation_css.png?raw=true" width="88" height="31" alt="Link to CSS validator">
-			</a>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            	alt="Valid CSS!">
+    		</a>
 		</p>
 </footer>
-
-  
+	
+</body>

@@ -35,6 +35,48 @@
   	margin-left: auto;
   	margin-right: auto;
 	}
+	.button {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
 
 	  
   </style>
@@ -42,12 +84,12 @@
 </head>
 <body>
 	<h1>Michael Grant's Hobby Page</h1>
-	<button onclick="showWho()">Show Who</button>
-	<button onclick="showWhat()">Show What</button>
-	<button onclick="showWhen()">Show When</button>
-	<button onclick="showHow()">Show How</button>
-	<button onclick="showWhere()">Show Where</button>
-	<button onclick="showWhy()">Show Why</button>
+	<button onclick="showWho()" class="button">Show Who</button>
+	<button onclick="showWhat()" class="button">Show What</button>
+	<button onclick="showWhen()" class="button">Show When</button>
+	<button onclick="showHow()" class="button">Show How</button>
+	<button onclick="showWhere()" class="button">Show Where</button>
+	<button onclick="showWhy()" class="button">Show Why</button>
 
 	<section id="who">
 		<h2>About Me</h2>
@@ -139,10 +181,20 @@
 	
 	<section id="how">
 		<h2>Practice, Practice, Practice</h2>
+		<p>Video games are like most other things in that they take practice and they take dedication. There are many ways to further your skill, like playing the game that you enjoy, reading up on it, and more. One of my personal favorites are called aim trainers, more specifically an aim trainer called AimLabs. AimLabs is a software that creates scenarios for you to play out that help to hone your aim, awareness, reaction time, and other aspects of FPS games. It takes practice and AimLabs is the best practice there is for these things. I like to start out with AimLabs before moving onto whatever game that it is I might play that day, as like a warm-up, like one would do in a gym. </p>
+		<figure>
+		<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/hobby/images/aimlab.gif?raw=true" alt="Aimlabs Practice 1">
+  			<figcaption>A clip of me playing an aimLabs activity for flicking.</figcaption>
+		</figure>
+		<figure>
+		<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/hobby/images/aimlab2.gif?raw=true" alt="Aimlabs Practice 2">
+  			<figcaption>A clip of me playing an aimLabs activity for reaction time.</figcaption>
+		</figure>
 	</section>
 	
 	<section id="why">
 		<h2>My Passion</h2>
+		
 	</section>
 
 	

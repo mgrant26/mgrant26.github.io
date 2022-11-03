@@ -5,8 +5,14 @@ body {
   margin:0;
 }
 
-h1{
+h1, h4{
  color: white; 
+ font-family: Palatino, URW Palladio L, serif;
+ max-width: 800px;
+ min-width: 100px;
+}
+p{
+  font-family: Didot, serif;	
 }
 
 .sidenav {
@@ -37,6 +43,8 @@ h1{
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+ max-width: 1000px;
+ min-width: 100px;
 }
 
 @media screen and (max-height: 450px) {

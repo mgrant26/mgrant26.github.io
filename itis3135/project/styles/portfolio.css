@@ -53,8 +53,10 @@ p{
   .sidenav a {font-size: 18px;}
 }
 
-.row {
+.portfolio{
   margin-left: 160px;
+}
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;

@@ -15,6 +15,7 @@ p{
   font-family: Didot, serif;	
 }
 .shrunk{
+    margin-left: 160px;
     width:500px;
     height:auto; 
 }

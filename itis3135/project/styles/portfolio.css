@@ -15,7 +15,6 @@ p{
   font-family: Didot, serif;	
 }
 .shrunk{
-    margin-left: 160px;
     width:500px;
     height:auto; 
 }
@@ -58,6 +57,7 @@ p{
 }
 
 .row {
+  margin-left: 160px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;

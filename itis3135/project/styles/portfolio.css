@@ -14,10 +14,7 @@ h1, h4{
 p{
   font-family: Didot, serif;	
 }
-.shrunk{
-    width:500px;
-    height:auto; 
-}
+
 
 .sidenav {
   height: 100%;
@@ -71,4 +68,6 @@ p{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+    width:500px;
+    height:auto; 
 }

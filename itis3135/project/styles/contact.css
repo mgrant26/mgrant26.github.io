@@ -14,13 +14,7 @@ h1, h4{
 p{
   font-family: Didot, serif;	
 }
-iframe{
-  width="640";
-  height="1328";
-  frameborder="0"; 
-  marginheight="0";
-  marginwidth="0";
-}
+
 .sidenav {
   height: 100%;
   width: 160px;

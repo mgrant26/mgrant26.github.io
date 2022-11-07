@@ -24,6 +24,13 @@ p{
 
 .reviewName{
   text-align: center; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.reviewText{
+  text-align: center;
+  font-size: 14px;
 }
 
 .container{
@@ -33,6 +40,7 @@ p{
   padding-left: 30px;
   background-color: #C4DEF3;
   border-radius: 25px;
+  max-width: 500px;
 }
 
 .sidenav {

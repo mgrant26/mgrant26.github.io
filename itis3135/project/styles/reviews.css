@@ -33,6 +33,10 @@ p{
   font-size: 14px;
 }
 
+.reviewDisplay{
+  float: left; 
+}
+
 .container{
   padding-top: 15px;
   padding-right: 30px;
@@ -40,7 +44,7 @@ p{
   padding-left: 30px;
   background-color: #C4DEF3;
   border-radius: 25px;
-  max-width: 500px;
+  width: 50%;
 }
 
 .sidenav {

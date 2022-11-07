@@ -14,6 +14,10 @@ h1, h4{
 p{
   font-family: Didot, serif;	
 }
+img{
+  max-width: 1000px;
+  height: auto;
+}
 
 .sidenav {
   height: 100%;

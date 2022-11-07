@@ -11,15 +11,10 @@ h1, h4{
  max-width: 800px;
  min-width: 100px;
 }
-h6{
- color: teal; 
- font-family: Palatino, URW Palladio L, serif;
- max-width: 800px;
- min-width: 100px;
-}
 p{
   font-family: Didot, serif;	
 }
+
 
 .sidenav {
   height: 100%;
@@ -49,11 +44,35 @@ p{
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  max-width: 1000px;
-  min-width: 100px;
+ max-width: 1000px;
+ min-width: 100px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.portfolio{
+  margin-left: 160px;
+}
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width:500px;
+  height: auto;
 }

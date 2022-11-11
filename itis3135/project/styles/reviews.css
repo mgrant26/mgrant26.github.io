@@ -1,4 +1,4 @@
-body {
+  body {
   font-family: "Lato", sans-serif;
   background-color: pink;
   color: teal;
@@ -11,6 +11,8 @@ h1, h4{
  max-width: 800px;
  min-width: 100px;
 }
+
+
 p{
   font-family: Didot, serif;	
 }
@@ -19,11 +21,11 @@ p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; 
+  
 }
 
 .reviewName{
-  text-align: center; 
+  text-align: left; 
   font-size: 16px;
   font-weight: bold;
 }
@@ -34,18 +36,45 @@ p{
 }
 
 .reviewDisplay{
-  float: left; 
+  margin-left: 160px;
   padding: 20px;
+  text-align: left;
 }
 
 .container{
+  max-width:330px;
+  display: inline-block;
+  border: 1px solid grey;
+  vertical-align: middle;
   padding-top: 15px;
   padding-right: 30px;
   padding-bottom: 15px;
   padding-left: 30px;
   background-color: #C4DEF3;
   border-radius: 25px;
-  width: 50%;
+}
+ 
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 .sidenav {
@@ -74,12 +103,12 @@ p{
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
-  margin-left: 160px;
+  margin-right: 160px;
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
- max-width: 1000px;
- min-width: 100px;
-  float: left;
+  width: 800px;
+  min-width: 100px;
+
 }
 
 @media screen and (max-height: 450px) {

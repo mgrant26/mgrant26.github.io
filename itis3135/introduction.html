@@ -1,120 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> The Musty Giraffe | Michael Grant | ITIS 3135 </title>
-  <style>
-
-  	body
-  	{ 
-	  color: rgb(98, 42, 189); 
-    
-		width: 100%;
-		background-color: rgb(141, 235, 145);
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: center;
-		
-		
-   	}
-	
-	header, footer
-	{
-		text-align: center;
-
-	}
-    
-    
-.navbar {
-overflow: hidden;
-background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: purple;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-	  
-  </style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/default.css">
+<title>Musty Giraffe||ITIS 3135|Landing</title>
   
 </head>
 <body>
-<header>
-		<img src="https://mgrant26.github.io/itis3135/images/banner.png" alt="Website banner" width="400" height="240"> 
-		<div class="navbar">
-  	    <a href="http://webpages.uncc.edu/mgrant26/">Charlotte.edu</a>
-  	    <a href="https://github.com/mgrant26">Github</a>
-            <a href="https://www.codecademy.com/profiles/mgrant26">Codeacademy</a>
-            <a href="https://www.freecodecamp.org/mgrant26/">freeCodeCamp</a>
-            <a href="https://www.linkedin.com/in/michael-grant-72a90b1b2/">LinkedIn</a>
-            <a href="https://uncc.instructure.com/courses/178981">Canvas Page</a>
-  		<div class="dropdown">
-    			<button class="dropbtn">Assignments
-      				<i class="fa fa-caret-down"></i>
-    			</button>
-    		<div class="dropdown-content">
-      			<a href="https://mgrant26.github.io/stuff/THE%20FILES''''.htm">Crappy Webpage</a>
-      			<a href="https://mgrant26.github.io/itis3135/forms.html">Forms</a>
-      			<a href="https://mgrant26.github.io/itis3135/calculatortry.html">Calculator Try</a>
-			<a href="https://mgrant26.github.io/itis3135/firstscripts.html">First Scripts</a>
-			<a href="https://mgrant26.github.io/itis3135/polygons.html">Polygons</a>
-			<a href="https://mgrant26.github.io/itis3135/tables.html">Tables</a>
-			<a href="https://mgrant26.github.io/itis3135/calculator.html">Calculator</a>
-			
-    		</div>
-  		</div> 
-		</div>
-</header> 
-  
-
+<div data-include="components/header.html"></div>
+<main>
+<h2>Activity 01: Introduction</h2>
   <br>
   <p> I'd like to welcome you to my first ever website that I've created for ITIS 3135. I'd like to welcome you to the Musty Giraffe.</p>
   <br>
@@ -125,25 +22,8 @@ background-color: #333;
 	<br>
   <p> Don't worry there'll be more to this page. Coming soon... </p>
   <br>
-	
-
-
-<footer>
-	<nav>
-		   
-	</nav>
-	<br>
-		<p>
-			<a href="https://validator.w3.org/check?uri=referer">
-				<img src="https://github.com/mgrant26/mgrant26.github.io/blob/main/itis3135/images/button_validation_html5.png?raw=true" width="88" height="31" alt="Link to HTML validator">
-			</a>
-
-    			<a href="https://jigsaw.w3.org/css-validator/check/referer">
-        			<img style="border:0;width:88px;height:31px"
-            			src="https://jigsaw.w3.org/css-validator/images/vcss"
-            			alt="Valid CSS!" />
-   			</a>
-		</p>
-</footer>
+</main>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/HTMLInclude.js"></script>
 	</body>
  

@@ -6,3 +6,7 @@ function createComment(){
    $("#newname").append(name);
    $("#newreview").append(review);
 }
+
+function createAlert(){
+	alert("This function is currently down. Please try again later.")
+ }

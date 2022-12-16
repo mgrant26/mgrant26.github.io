@@ -7,17 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-  <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+  <link href="owlcarousel/assets/owl.carousel.css" rel="stylesheet">
+  <link href="owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="owl-carousel/owl.carousel.js"></script>
-  
-
-
-
-
-
-
+ 
 </head>
 <body>
   <header>
@@ -86,11 +79,13 @@
 </a>
 <p>Designed by <a href="https://mgrant26.github.io/itis3135/designFirm/">mGrant Inc. LLC</a></p>
 </footer>
+
 <script>
-let n = 1;
- onload="showSlides(n)";
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
 </script>
 <script src="scripts/slideshow.js"></script>
 <script src="scripts/index.js"></script>
-
+<script src="owlcarousel/owl.carousel.js"></script>
 </body>
